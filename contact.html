@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact me through my accessible personal portfolio contact form.">
+
+    <meta name="author" content="Yashwanthni">
+
+    <title>Contact Me | My Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="contact-heading">
+
+            <h1 id="contact-heading">Contact Me</h1>
+
+        <p>
+            Feel free to contact me for
+            collaboration, questions or opportunities.
+        </p>
+
+        <form>
+
+            <div>
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
