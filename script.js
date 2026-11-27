@@ -7,7 +7,7 @@ const themeToggle = document.getElementById("theme-toggle");
 
 // Load previously saved theme
 const savedTheme =
-    localStorage.getItem("portfolio-theme") || "light";
+    localStorage.getItem("portfolio-theme") || "light"; 
 
 // Apply theme and update button
 function applyTheme(theme) {
