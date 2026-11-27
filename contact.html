@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +14,13 @@
 
     <title>Contact Me | My Portfolio</title>
 
-   <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <a href="#main-content">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
         <h2>My Portfolio</h2>
@@ -32,6 +33,15 @@
                 <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to dark theme"
+            aria-pressed="false">
+            🌙 Dark Mode
+        </button>
     </header>
 
     <main id="main-content">
@@ -40,49 +50,48 @@
 
             <h1 id="contact-heading">Contact Me</h1>
 
-        <p>
-            Feel free to contact me for
-            collaboration, questions or opportunities.
-        </p>
+            <p>
+                Feel free to contact me for
+                collaboration, questions or opportunities.
+            </p>
 
-        <form>
+            <form>
 
-            <div>
-                <label for="name">Your Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    autocomplete="name"
-                    required
-                >
-            </div>
+                <div>
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
 
-            <div>
-                <label for="email">Your Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    autocomplete="email"
-                    required
-                >
-            </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
 
-            <div>
-                <label for="message">Your Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required
-                ></textarea>
-            </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
 
-            <button type="submit">Send Message</button>
+                <button type="submit">Send Message</button>
 
-        </form>
-
+            </form>
 
         </section>
 

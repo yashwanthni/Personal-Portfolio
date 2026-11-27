@@ -3,8 +3,6 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,16 +10,22 @@
 
     <meta name="author" content="Yashwanthni">
 
-    <title>About Me | My Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+
+    <title>About Me | My Portfolio</title>
 </head>
 
 <body>
 
-    <a href="#main-content">Skip to main content</a>
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
 
     <header>
+
         <h2>My Portfolio</h2>
 
         <nav aria-label="Main navigation">
@@ -32,48 +36,64 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to dark theme"
+            aria-pressed="false">
+            🌙 Dark Mode
+        </button>
+
     </header>
 
     <main id="main-content">
 
-    <section aria-labelledby="about-heading">
-        <h1 id="about-heading">About Me</h1>
+        <section aria-labelledby="about-heading">
 
-        <p>
-            Hello! I'm Yashwanthni, a first-year
-            B.Tech Computer Science and Engineering
-            student.
-        </p>
+            <h1 id="about-heading">About Me</h1>
 
-        <p>
-            I am passionate about technology,
-            programming and web development.
-            I enjoy exploring new concepts and
-            improving my technical skills.
-        </p>
-    </section>
+            <p>
+                Hello! I'm Yashwanthni, a first-year
+                B.Tech Computer Science and Engineering
+                student.
+            </p>
 
-    <section aria-labelledby="education-heading">
-        <h2 id="education-heading">My Education</h2>
+            <p>
+                I am passionate about technology,
+                programming and web development.
+                I enjoy exploring new concepts and
+                improving my technical skills.
+            </p>
 
-        <p>
-            Currently pursuing B.Tech in
-            Computer Science and Engineering.
-        </p>
-    </section>
+        </section>
 
-    <section aria-labelledby="interests-heading">
-        <h2 id="interests-heading">My Interests</h2>
+        <section aria-labelledby="education-heading">
 
-        <ul>
-            <li>Programming</li>
-            <li>Web Development</li>
-            <li>Learning New Technologies</li>
-            <li>Problem Solving</li>
-        </ul>
-    </section>
+            <h2 id="education-heading">My Education</h2>
 
-</main>
+            <p>
+                Currently pursuing B.Tech in
+                Computer Science and Engineering.
+            </p>
+
+        </section>
+
+        <section aria-labelledby="interests-heading">
+
+            <h2 id="interests-heading">My Interests</h2>
+
+            <ul>
+                <li>Programming</li>
+                <li>Web Development</li>
+                <li>Learning New Technologies</li>
+                <li>Problem Solving</li>
+            </ul>
+
+        </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2026 My Portfolio. All rights reserved.</p>

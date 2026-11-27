@@ -3,8 +3,6 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,16 +10,22 @@
 
     <meta name="author" content="Yashwanthni">
 
-    <title>My Projects | My Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>My Projects | My Portfolio</title>
 </head>
 
 <body>
 
-    <a href="#main-content">Skip to main content</a>
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
 
     <header>
+
         <h2>My Portfolio</h2>
 
         <nav aria-label="Main navigation">
@@ -32,38 +36,62 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to dark theme"
+            aria-pressed="false">
+            🌙 Dark Mode
+        </button>
+
     </header>
 
     <main id="main-content">
 
-    <section aria-labelledby="projects-heading">
+        <section aria-labelledby="projects-heading">
 
-        <h1 id="projects-heading">My Projects</h1>
+            <h1 id="projects-heading">My Projects</h1>
+
+            <p>
+                Here are some of the projects I have
+                worked on while learning programming
+                and web development.
+            </p>
+
+            
+<div class="projects-grid">
+
+    <article class="project-card">
+        <h2>Personal Portfolio Website</h2>
 
         <p>
-            Here are some of the projects I have
-            worked on while learning programming
-            and web development.
+            A responsive personal portfolio
+            website created using HTML5 and CSS3.
         </p>
 
-        <article class="project-card">
-            <h2>Personal Portfolio Website</h2>
-            <p>
-                A responsive personal portfolio
-                website created using HTML5 and CSS3.
-            </p>
-        </article>
+        <span class="project-tag">HTML5</span>
+        <span class="project-tag">CSS3</span>
+    </article>
 
-        <article class="project-card">
-            <h2>Python Programs</h2>
-            <p>
-                A collection of beginner-level
-                Python programs to practise
-                programming fundamentals.
-            </p>
-        </article>
+    <article class="project-card">
+        <h2>Python Programs</h2>
 
-    </section>
+        <p>
+            A collection of beginner-level
+            Python programs to practise
+            programming fundamentals.
+        </p>
+
+        <span class="project-tag">Python</span>
+        <span class="project-tag">Programming</span>
+    </article>
+
+</div>
+
+
+        </section>
 
     </main>
 
